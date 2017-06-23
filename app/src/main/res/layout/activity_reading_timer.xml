@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="bookname"
+    android:id="@+id/Timerbookname"
+    android:textSize="40sp"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:gravity="center_vertical|center_horizontal" />
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:countDown="false">
+    </Chronometer>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:background="#00000000"
+            android:onClick="onStart"
+            android:text="开始读书"
+            android:layout_height="60dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="35dp"
+            android:id="@+id/begin">
+        </Button>
+
+        <Button
+            android:background="#00000000"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:onClick="onStop"
+            android:text="暂停读书"
+            android:id="@+id/stop">
+        </Button>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="#00000000"
+            android:onClick="onReset"
+            android:text="结束并返回"
+            android:id="@+id/back">
+        </Button>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@mipmap/dogbeach"/>
+</LinearLayout>

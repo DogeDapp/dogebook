@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="#002c2e30"
+    android:layout_height="match_parent">
+
+
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="书名："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/pages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/name"
+            android:text=" 页数："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+
+        <EditText
+            android:id="@+id/pages2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pages"
+            android:layout_alignBaseline="@+id/pages"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <EditText
+            android:id="@+id/date2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pages2"
+            android:layout_below="@+id/pages2"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/activity_horizontal_margin" />
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/date2"
+            android:layout_toLeftOf="@+id/date2"
+            android:gravity="end"
+            android:text=" 完成日期："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </RelativeLayout> -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="1">
+
+        <TableRow android:background="@color/transparentWhite2"
+
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:text="书名:"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/nameEdit"
+                android:textSize="18sp"/>
+        </TableRow>
+
+
+        <TableRow android:background="@color/transparentWhite1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+            <TextView
+                android:text="全部页数:"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/TotalPages"
+                android:textSize="18sp"/>
+        </TableRow>
+
+        <TableRow android:background="@color/transparentWhite2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:text="页数:"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/pagesEdit"
+              android:singleLine="true"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow android:background="@color/transparentWhite1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+            <TextView
+                android:text="完成日期:"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/dateEdit"
+                android:hint="格式：xx/yy"
+                android:singleLine="true"/>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</LinearLayout>
