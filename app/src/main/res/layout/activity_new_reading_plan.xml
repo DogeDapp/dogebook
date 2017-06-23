@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.delll.mfinalproject.NewReadingPlan"
+    android:background="@mipmap/pic8"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/transparentBlack">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增读书计划"
+            android:textColor="@color/disWhite"
+            android:textSize="25sp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/transparentWhite1">
+                <TextView
+                    android:text="书名:"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/bookNameEditText"
+                    android:singleLine="true"/>
+            </TableRow>
+
+            <TableRow android:background="@color/transparentWhite2">
+                <TextView
+                    android:text="页数:"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/pageNumEditText"
+                    android:singleLine="true"/>
+            </TableRow>
+
+            <TableRow android:background="@color/transparentWhite1">
+                <TextView
+                    android:text="已读页数:"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/pageEditText"
+                    android:singleLine="true"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow android:background="@color/transparentWhite2">
+                <TextView
+                    android:text="完成日期:"
+                    android:textSize="18sp"/>
+                <EditText
+                    android:id="@+id/finishDate"
+                    android:hint="格式：xx/yy"
+                    android:singleLine="true"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background2"
+            android:text="完成"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>
